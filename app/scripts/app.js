@@ -18,6 +18,6 @@ angular
 	$stateProvider
 		.state('home', {
 			url: '/',
-			template: 'home foo'
+			templateUrl: 'templates/home.html'
 		});
 }]);
