@@ -90,3 +90,12 @@ body {
     border-bottom: 0;
   }
 }
+// Custom Styles
+// Navigation Styles
+.nav > li > a:hover, 
+.nav > li > a:focus,
+.active {
+    background-color: $brand-info;
+    text-decoration: none;
+    outline: 0;
+}
