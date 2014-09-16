@@ -12,7 +12,7 @@ angular
 .module('goldfishApp', [
 	'ui.router'
 	])
-.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+.config(['$urlRouterProvider', '$stateProvider', '$locationProvider', function($urlRouterProvider, $stateProvider, $locationProvider) {
 	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
@@ -28,5 +28,6 @@ angular
 			url: '/contact',
 			templateUrl: 'views/contact.html'
 		});
+		$locationProvider.html5Mode(true);
 		
 }]);
