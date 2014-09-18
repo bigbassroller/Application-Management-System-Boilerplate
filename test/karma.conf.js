@@ -23,7 +23,8 @@ module.exports = function(config) {
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js',
-      'bower_components/angular-ui-router/release/angular-ui-router.js'
+      'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'bower_components/angular-bootstrap/ui-bootstrap-tpls.js'
     ],
 
     // list of files / patterns to exclude
