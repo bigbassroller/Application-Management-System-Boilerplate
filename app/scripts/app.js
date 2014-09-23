@@ -10,7 +10,8 @@
 */
 angular
 .module('goldfishApp', [
-	'ui.router'
+	'ui.router',
+	'ui.bootstrap'
 	])
 .config(['$urlRouterProvider', '$stateProvider', '$locationProvider', function($urlRouterProvider, $stateProvider, $locationProvider) {
 	$urlRouterProvider.otherwise('/');
@@ -24,10 +25,16 @@ angular
 			url: '/about',
 			templateUrl: 'views/about.html'
 		})
-		.state('contact', {
-			url: '/contact',
-			templateUrl: 'views/contact.html'
+		.state('stuff', {
+			url: '/stuff',
+			templateUrl: 'views/stuff.html'
+		})
+		.state('profile', {
+			url: '/profile',
+			templateUrl: 'views/profile.html'
 		});
-		$locationProvider.html5Mode(true);
+	$locationProvider.html5Mode(true);
 		
 }]);
+
+
